@@ -9,7 +9,7 @@ weatherForm.addEventListener("submit", e => {
     e.preventDefault();
 
     const location = searchElement.value;
-    fetch(`http://localhost:3000/weather?address=${location}`).then(respond => {
+    fetch(`/weather?address=${location}`).then(respond => {
         messageOne.textContent = 'Loading';
         messageTwo.textContent = '';
         
